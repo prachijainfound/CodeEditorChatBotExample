@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.code-and-chat_container{
+    display: flex;
+    height: 100vh;
+    background-color: #171717;
+}
+
+.code-and-chat_container .code_container{
+    flex: 0 0 45%;
+    max-width: 45%;
+    border-right: 1px solid #292929;
+    width: calc(100% - 347px);
+}
+
+.code-and-chat_container .code_container .code-tabs_container{
+    padding-top: 10px;
+    border-bottom: 1px solid #89948b;
+    display: flex;
+    align-items: center;
+}
+
+.all-tabs-style::-webkit-scrollbar {
+    width: 1px;
+    height: 1px;
+  }
+  .mychbx .dPdbIW{
+          background:#1f1f1f!important;
+      }
+      .mychbx .hQsUiY {
+              background:#404040!important;
+          }
+  
+  /* Track */
+  .all-tabs-style::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  .all-tabs-style::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  .all-tabs-style::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+.code-and-chat_container .code_container .code-tabs_container .plus-icon{
+    font-size: 1.4em;
+    color: #aaa;
+    margin: 0 10px 4px 10px;
+    cursor: pointer;
+}
+
+.apply-changes_container{
+    padding: 3px 8px;
+    background: #1f1f1f;
+    border-radius: 0 0 4px 4px;
+    color: #aaa;
+    font-size: 1em;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: 20px;
+    display: flex;
+    white-space: nowrap;
+}
+
+.apply-changes_container .fa{
+    margin-right: 8px;
+}
+
+.code-and-chat_container .chatbox_container{
+    flex: 0 0 55%;
+    max-width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatbox_container .k-bubble{
+    background-color: #404040!important;
+    border-color: #404040!important;
+    color:#777778!important;
+    box-shadow: none!important;
+}
+.chatbox_container .k-chat{
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+}
+
+.chatbox_container .k-message-box{
+    background-color: #1f1f1f;
+    border-color: #1f1f1f;
+}
+
+
+@media (max-width: 1025px){
+    .code-and-chat_container{
+        flex-wrap: wrap;
+    }
+    .code-and-chat_container .code_container{
+        flex: 0 0 100%;
+    }
+
+    .code-and-chat_container .chatbox_container{
+        flex: 0 0 100%;
+    }
+}
